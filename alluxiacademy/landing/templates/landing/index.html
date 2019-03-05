@@ -29,7 +29,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img class="img_alluxi_horizontal_color" src="{% static 'img/img-alluxi-horizontal-color.png' %}"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,24 +53,37 @@
         <button type="button" class="btn btn-primary BG mt-20">SUBSCRIBE NOW</button>
       </div>
     </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
   </header>
 
   <section>
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="{% static 'img/01.jpg' %}" alt="">
-          </div>
+      <div class="row align-items-center ptb-50">
+        <p class="About-this-course col-lg-12">About this course</p>
+        <div class="col-lg-6 Lorem-ipsum-dolor-si">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">For those about to rock...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+        <div class="col-lg-6">
+          <div class="row">
+          <div class="col-lg-6">
+            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Professional Coaches</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+          </div>
           </div>
         </div>
       </div>
@@ -79,17 +92,31 @@
 
   <section>
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="{% static 'img/02.jpg' %}" alt="">
+      <div class="row align-items-center ptb-50">
+        <p class="Course-Information col-lg-12">Course Information</p>
+        <div class="col-lg-12 pt-45">
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <img src="{% static 'img/img-info-venue.png' %}">
+            <p class="blue-title">Venue</p>
+            <p class="Information">Course will be held at Wework Centurion</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img src="{% static 'img/img-info-date.png' %}">
+            <p class="blue-title">Date</p>
+            <p class="Information">The course will start on March 23th.</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img src="{% static 'img/img-info-timeline.png' %}">
+            <p class="blue-title">Duration</p>
+            <p class="Information">The duration of the course is of 8 weeks.</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img src="{% static 'img/img-info-schedules.png' %}">
+            <p class="blue-title">Schedule</p>
+            <p class="Information">Course will be on Saturdays  from 9:00 AM to 2:00 PM</p>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="p-5">
-            <h2 class="display-4">We salute you!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -97,29 +124,252 @@
 
   <section>
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="{% static 'img/03.jpg' %}" alt="">
+      <div class="row align-items-center ptb-50">
+
+        <div class="col-lg-3 Lorem-ipsum-dolor-si text-center">
+          <p class="About-this-course col-lg-12">Instructor</p>
+          <img class="Profile-Pic" src="{% static 'img/instructor.png' %}">
+          <p class="Name pt-30">Gustavo Reyes</p>
+          <p class="Job-Title">Python Developer</p>
+          <div class="row social pt-30">
+            <a href="#"><img class="px-15" src="{% static 'img/img-social-github.png' %}"></a>
+            <a href="#"><img class="px-15" src="{% static 'img/img-social-linkedin.png' %}"></a>
+          </div>
+          <p class="pt-30 text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-lg-9">
+          <p class="About-this-course col-lg-12">Syllabus</p>
+
+          <div class="accordion" id="accordionSyllabus">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link syl-title" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      Week 1: Android Basics
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading2">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      Week 2: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      Week 3: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading4">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      Week 4: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading5">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      Week 5: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading6">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                      Week 6: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading7">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                      Week 7: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading8">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                      Week 8: Title
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionSyllabus">
+                  <div class="card-body Information">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary">
+    <div class="container">
+      <div class="row align-items-center ptb-50">
+        <div class="col-lg-6 Take-this-course-content">
+          <p class="Take-this-course col-lg-12">Take this course</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="payment-BG">
+            <p class="blue-title">Build Your First Android App</p>
+            <p class="price">$8,000.00 MXN</p>
+            <p class="Information text-center">One Payment</p>
+            <hr/>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Professional Coaches</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Label</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary BG"><span class="align-middle">PAY WITH</span> <img src="{% static 'img/img-logo-paypal-btn.png' %}"></button>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">Let there be rock!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questions-BG">
+    <div class="container">
+      <div class="row align-items-center ptb-50 text-center">
+        <p class="About-this-course col-lg-12">Still have questions?</p>
+        <p class="Lorem-ipsum-dolor-si col-lg-12">Leave us your email and message and we will contact you.</p>
+        <div class="col-lg-12">
+          <div class="ptb-50">
+            <form id="contact-form" class="text-center" method="POST">
+                {% csrf_token %}
+                    <div class="text-center">
+                        <input id="email" type="email" class="input-size label-input-color transparent-BG" placeholder="Email" required>
+                    </div>
+                    <div class="text-center">
+                        <textarea id="content" class="ta-input-size label-input-color transparent-BG" rows="4" placeholder="Message"></textarea>
+                    </div>
+
+                <div class="small-margin-vertical pt-45">
+                <button id="send" type="submit" class="btn btn-primary BG" data-toggle="modal" data-target="#contactModal">ENVIAR</button>
+                </div>
+            </form>
+        </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+  <footer class="bg-primary small-margin-sides">
+        <div class="row pt-45 footer-padding">
+            <div class="col-lg-4">
+                <img class="img-alluxi-horizontal-white" src="{% static 'img/img-alluxi-horizontal-white.png' %}">
+            </div>
+            <div class="col-lg-4">
+                <p class="white-subtitle">México</p>
+                <p class="white-subcontent">América 327 Sur, Centro, Monterrey, México</p>
+                <p class="white-subcontent">hola@alluxi.mx</p>
+                <p class="white-subcontent">+52-(811)-500-1600</p>
+                <p class="white-subtitle">United States</p>
+                <p class="white-subcontent">(512) 547-3628</p>
+                <p class="white-subcontent">Virtual Office <br/> Austin, TX</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="white-subtitle">Follow Us</p>
+                <div class="row small-margin-sides">
+                    <div class="small-margin-bottom small-margin-sides">
+                        <a href="https://mx.linkedin.com/company/alluxi-mx"><img class="ic-social-linkedin" src="{% static 'img/ic-social-linkedin.png' %}"></a>
+                    </div>
+                    <div class="small-margin-bottom small-margin-sides">
+                        <a href="https://twitter.com/AlluxiMx"><img class="ic-social-twitter" src="{% static 'img/ic-social-twitter.png' %}"></a>
+                    </div>
+                    <div class="small-margin-bottom small-margin-sides">
+                        <a href="https://www.facebook.com/alluxi/"><img class="ic-social-facebook" src="{% static 'img/ic-social-facebook.png' %}"></a>
+                    </div>
+                    <div class="small-margin-bottom small-margin-sides">
+                        <a href="https://www.instagram.com/alluximx/"><img class="ic-social-facebook" src="{% static 'img/ic-social-instagram.png' %}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="footer-text text-center small-margin-vertical">Alluxi  © 2018 All rights reserved</div>
+        </div>
+    </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
