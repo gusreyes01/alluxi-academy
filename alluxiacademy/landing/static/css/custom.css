@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 .BG {
   width: 180px;
@@ -107,6 +109,19 @@
   height: 62px;
   font-family: 'Source Sans Pro';
   font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pay-title {
+  height: 62px;
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
