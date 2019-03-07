@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.screenit{
+    width:200px;
+}
+
 .BG {
   width: 180px;
   height: 44px;
