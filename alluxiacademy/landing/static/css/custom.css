@@ -326,7 +326,7 @@ html {
 }
 
 .img-alluxi-horizontal-white{
-    width:150px;
+    width:250px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -379,3 +379,14 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
+.accepted-cards{
+    width: 500px;
+}
+
+.izettle{
+    width: 200px;
+}
+
+.accepted-cards-bg{
+    background-color: #f7f7f6;
+}

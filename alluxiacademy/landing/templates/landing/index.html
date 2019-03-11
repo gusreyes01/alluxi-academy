@@ -9,7 +9,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>One Page Wonder - Start Bootstrap Template</title>
+  <!-- PAYPAL -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=ATvz5RlzbS8XoCLj7zpvu15VqhZyr8X4CGEpArMXvrH0LOmbA615GHgUPXXshmkC_6omxUH_K3BDvzhH&currency=MXN">
+  </script>
+
+  <title>Alluxi Academy</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -31,7 +38,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img class="img_alluxi_horizontal_color" src="{% static 'img/img-alluxi-horizontal-color.png' %}"></a>
+      <a class="navbar-brand" href="#"><img class="img_alluxi_horizontal_color" src="{% static 'img/img-alluxi-horizontal-color@3x.png' %}"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -346,9 +353,23 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-primary BG"><span class="align-middle">PAGA CON </span> <img src="{% static 'img/img-logo-paypal-btn.png' %}"></button>
+              <div type="button" id="paypal-button-container" ></div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="accepted-cards-bg">
+    <div class="container">
+      <div class="row align-items-center ptb-50">
+        <p class="Course-Information col-lg-12">Tambien puedes pagar directamente en <a href="#address">nuestras oficinas</a></p>
+        <div class="text-center col-lg-6">
+          <img class="izettle" src="{% static 'img/izettle.png' %}">
+        </div>
+        <div class="text-center col-lg-6">
+          <img class="accepted-cards" src="{% static 'img/izettle-tarjetas-aceptadas.png' %}">
         </div>
       </div>
     </div>
@@ -384,9 +405,9 @@
   <footer class="bg-primary small-margin-sides">
         <div class="row pt-45 footer-padding">
             <div class="col-lg-4">
-                <img class="img-alluxi-horizontal-white" src="{% static 'img/img-alluxi-horizontal-white.png' %}">
+                <img class="img-alluxi-horizontal-white" src="{% static 'img/img-alluxi-horizontal-white@3x.png' %}">
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4" id="address">
                 <p class="white-subtitle">México</p>
                 <p class="white-subcontent">América 327 Sur, Centro, Monterrey, México</p>
                 <p class="white-subcontent">hola@alluxi.mx</p>
@@ -405,7 +426,7 @@
                         <a href="https://twitter.com/AlluxiMx"><img class="ic-social-twitter" src="{% static 'img/ic-social-twitter.png' %}"></a>
                     </div>
                     <div class="small-margin-bottom small-margin-sides">
-                        <a href="https://www.facebook.com/alluxi/"><img class="ic-social-facebook" src="{% static 'img/ic-social-facebook.png' %}"></a>
+                        <a href="https://www.facebook.com/alluxiacademy/"><img class="ic-social-facebook" src="{% static 'img/ic-social-facebook.png' %}"></a>
                     </div>
                     <div class="small-margin-bottom small-margin-sides">
                         <a href="https://www.instagram.com/alluximx/"><img class="ic-social-facebook" src="{% static 'img/ic-social-instagram.png' %}"></a>
@@ -417,6 +438,33 @@
             <div class="footer-text text-center small-margin-vertical">Alluxi  © 2018 All rights reserved</div>
         </div>
     </footer>
+
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '17400'
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Transaction completed by ' + details.payer.name.given_name);
+          // Call your server to save the transaction
+          return fetch('/paypal-transaction-complete', {
+            method: 'post',
+            body: JSON.stringify({
+              orderID: data.orderID
+            })
+          });
+        });
+      }
+    }).render('#paypal-button-container');
+  </script>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
