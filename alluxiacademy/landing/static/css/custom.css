@@ -57,8 +57,6 @@ html {
 }
 
 .Build-Your-First-And {
-  width: 540px;
-  height: 54px;
   font-family: 'Source Sans Pro';
   font-size: 40px;
   font-weight: 300;
@@ -71,8 +69,6 @@ html {
 }
 
 .Learn-Android-App-De {
-  width: 540px;
-  height: 75px;
   font-family: 'Source Sans Pro';
   font-size: 24px;
   font-weight: 300;
@@ -136,8 +132,6 @@ html {
 }
 
 .Course-Information {
-  width: 254px;
-  height: 52px;
   font-family: 'Source Sans Pro';
   font-size: 30px;
   font-weight: 300;
@@ -389,4 +383,25 @@ html {
 
 .accepted-cards-bg{
     background-color: #f7f7f6;
+}
+
+@media only screen and (max-width: 600px) {
+  .accepted-cards{
+    width: 250px;
+    }
+   .img_alluxi_horizontal_color {
+    width: 191px;
+    height: 57px;
+    object-fit: contain;
+    }
+
+   .input-size{
+       width:250px;
+   }
+   .ta-input-size{
+       width:250px;
+   }
+   header.masthead{
+       margin-top:80px;
+   }
 }
