@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landing'
+    'landing',
+    'sweetify',
 ]
 
 MIDDLEWARE = [
@@ -126,8 +127,8 @@ TEMPLATE_DIRS = (
 )
 
 ANYMAIL = {
-    "MAILGUN_API_KEY": os.environ.get('MAILGUN_API_KEY', True),
-    "MAILGUN_SENDER_DOMAIN": os.environ.get('MAILGUN_SENDER_DOMAIN', True),
+    "MAILGUN_API_KEY": os.environ.get('MAILGUN_API_KEY'),
+    "MAILGUN_SENDER_DOMAIN": os.environ.get('MAILGUN_SENDER_DOMAIN'),
 }
 
 EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
