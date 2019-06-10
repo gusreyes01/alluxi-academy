@@ -25,7 +25,7 @@ SECRET_KEY = '1__vwz+g4g70sn=zq!9j8#px7a6!%u^cc(y8wd#!wu=g%)&q_!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_ROOT = ''
+STATIC_ROOT = '/home/alluxi-academy/static_prod/'
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (

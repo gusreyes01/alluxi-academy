@@ -28,7 +28,7 @@ def index(request):
             }
             send_mail_wrapper('Contacto Alluxi Academy',
                               'landing/contact_email.html',
-                              context, ['andres@alluxi.mx'])
+                              context, ['hola@alluxi.mx'])
 
             sweetify.success(request, '¡Gracias por tu mensaje! Nos pondremos en contacto contigo a la brevedad.')
         except Exception as e:
