@@ -34,4 +34,4 @@ def index(request):
         except Exception as e:
             sweetify.error(request, 'Error: ' + str(e))
 
-    return render(request, 'landing/index.html')
+    return render(request, 'landing/index-ds.html')
