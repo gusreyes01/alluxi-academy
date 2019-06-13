@@ -33,6 +33,14 @@ def _submit_form(request):
         sweetify.error(request, 'Error: ' + str(e))
 
 
+def introduccion_dg(request):
+    if request.method == 'POST':
+        _submit_form(request)
+
+    return render(request, 'landing/index-dg.html')
+
+
+
 def introduccion_ds(request):
     if request.method == 'POST':
         _submit_form(request)
