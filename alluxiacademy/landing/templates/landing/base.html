@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- PAYPAL -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script
+            src="https://www.paypal.com/sdk/js?client-id=AW0xCM5SKpCDyutKGP5qP5TxJvtoNr11BI7MuEc_obGsxUGSqxj-AoxqQc1H-8lrEIekF7fiI4Z9q6xf&currency=MXN">
+    </script>
+
+    <title>Alluxi Academy</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicon/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'favicon/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'favicon/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+          rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/one-page-wonder.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img class="img_alluxi_horizontal_color"
+                                              src="{% static 'img/img-alluxi-horizontal-color@3x.png' %}"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#enroll">
+                        <button type="button" class="btn btn-primary BG">INSCRÍBETE</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Course header -->
+{% block header %}{% endblock %}
+
+{% block subheader %}{% endblock %}
+<!-- Course subheader -->
+
+{% block details %}{% endblock %}
+<!-- Course details -->
+>
+
+<!-- Companies who trust us :) -->
+<section>
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+            <p class="Course-Information col-lg-12">Estas empresas ya confían en nostros: </p>
+            <div class="row col-lg-12">
+                <div class="text-center col-lg-6">
+                    <img class="screenit" src="{% static 'img/img_bp_screenit@2x.png' %}">
+                </div>
+                <div class="text-center col-lg-6">
+                    <img class="IA" src="{% static 'img/logo_IA.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block subjects %}{% endblock %}
+<!-- Course subjects -->
+
+<div id="enroll"></div>
+
+<!-- Paypayl Form -->
+{% block paypal %}{% endblock %}
+
+<!-- Izettle -->
+<section class="accepted-cards-bg">
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+            <p class="Course-Information col-lg-12">Tambien puedes pagar directamente en <a href="#address">nuestras
+                                                                                                            oficinas</a>
+            </p>
+            <div class="text-center col-lg-6">
+                <img class="izettle" src="{% static 'img/izettle.png' %}">
+            </div>
+            <div class="text-center col-lg-6">
+                <img class="accepted-cards" src="{% static 'img/izettle-tarjetas-aceptadas.png' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="questions-BG">
+    <div class="container">
+        <div class="row align-items-center ptb-50 text-center">
+            <p class="About-this-course col-lg-12">Aún tienes preguntas?</p>
+            <p class="Lorem-ipsum-dolor-si col-lg-12">Déjanos tu correo y nos pondremos en contacto contigo lo antes
+                                                      posible.</p>
+            <div class="col-lg-12">
+                <div class="ptb-50">
+                    <form id="contact-form" class="text-center" method="POST">
+                        {% csrf_token %}
+                        <div class="text-center">
+                            <input id="email" type="email" class="input-size label-input-color transparent-BG"
+                                   placeholder="Correo" required>
+                        </div>
+                        <div class="text-center">
+                            <textarea id="content" class="ta-input-size label-input-color transparent-BG" rows="4"
+                                      placeholder="Mensaje"></textarea>
+                        </div>
+
+                        <div class="small-margin-vertical pt-45">
+                            <button id="send" type="submit" class="btn btn-primary BG" data-toggle="modal"
+                                    data-target="#contactModal">ENVIAR
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="other-courses">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="other-courses-head"> ¿Te interesa otro curso? </h1>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+                <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'introduccion_ds' %}">Data Science</a>
+                    </h4>
+                    <p class="card-text">Aprende a generar predicciones utilizando Python y algoritmos de machine
+                                         learning. En este curso
+                                         aplicarás técnicas para tratar, limpiar y analizar la información; todo lo
+                                         necesario para
+                                         convertirte en Científico de Datos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+                <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'introduccion_dg' %}">Data Governance</a>
+                    </h4>
+                    <p class="card-text">Proveer a los participantes de las bases
+                                         teóricas y prácticas para la creación de un
+                                         Programa de Gobierno de Datos, generando sus
+                                         propios casos de uso y herramientas básicas
+                                         para su ejecución.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+                <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'python_crash_course' %}">Python Crash Course</a>
+                    </h4>
+                    <p class="card-text">En este curso aprenderas a utilizar los conocimientos y herramientas
+                                         proporcionadas por el
+                                         instructor para aprender a desarrollar en Python de la manera mas eficiente a
+                                         traves de desafiantes
+                                         proyectos.</p>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary small-margin-sides">
+    <div class="row pt-45 footer-padding">
+        <div class="col-lg-4">
+            <img class="img-alluxi-horizontal-white" src="{% static 'img/img-alluxi-horizontal-white@3x.png' %}">
+        </div>
+        <div class="col-lg-4" id="address">
+            <p class="white-subtitle">México</p>
+            <p class="white-subcontent">América 327 Sur, Centro, Monterrey, México</p>
+            <p class="white-subcontent">hola@alluxi.mx</p>
+            <p class="white-subcontent">+52-(811)-500-1600</p>
+            <p class="white-subtitle">United States</p>
+            <p class="white-subcontent">(512) 547-3628</p>
+            <p class="white-subcontent">Virtual Office <br/> Austin, TX</p>
+        </div>
+        <div class="col-lg-4">
+            <p class="white-subtitle">Follow Us</p>
+            <div class="row small-margin-sides">
+                <div class="small-margin-bottom small-margin-sides">
+                    <a href="https://mx.linkedin.com/company/alluxi-mx"><img class="ic-social-linkedin"
+                                                                             src="{% static 'img/ic-social-linkedin.png' %}"></a>
+                </div>
+                <div class="small-margin-bottom small-margin-sides">
+                    <a href="https://twitter.com/AlluxiMx"><img class="ic-social-twitter"
+                                                                src="{% static 'img/ic-social-twitter.png' %}"></a>
+                </div>
+                <div class="small-margin-bottom small-margin-sides">
+                    <a href="https://www.facebook.com/alluxiacademy/"><img class="ic-social-facebook"
+                                                                           src="{% static 'img/ic-social-facebook.png' %}"></a>
+                </div>
+                <div class="small-margin-bottom small-margin-sides">
+                    <a href="https://www.instagram.com/alluximx/"><img class="ic-social-facebook"
+                                                                       src="{% static 'img/ic-social-instagram.png' %}"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="footer-text text-center small-margin-vertical">Alluxi © 2018 All rights reserved</div>
+    </div>
+</footer>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v3.2'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2124283304318298"
+     logged_in_greeting="¡Hola! ¿En que te podemos ayudar?"
+     logged_out_greeting="¡Hola! ¿En que te podemos ayudar?">
+</div>
+
+<script>
+    paypal.Buttons({
+        createOrder: function (data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '17400'
+                    }
+                }]
+            });
+        },
+        onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+                alert('Transaction completed by ' + details.payer.name.given_name);
+                // Call your server to save the transaction
+                return fetch('/paypal-transaction-complete', {
+                    method: 'post',
+                    body: JSON.stringify({
+                        orderID: data.orderID
+                    })
+                });
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+{% load sweetify %}
+{% sweetify %}
+
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51150916-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-51150916-1');
+</script>
+
+</html>

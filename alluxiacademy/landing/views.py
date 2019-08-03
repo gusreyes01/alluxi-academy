@@ -52,4 +52,4 @@ def python_crash_course(request):
     if request.method == 'POST':
         _submit_form(request)
 
-    return render(request, 'landing/index.html')
+    return render(request, 'landing/index-py.html')

@@ -1,484 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends './base.html' %}
+
 {% load static %}
 
-<head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+{% block header %}
 
-  <!-- PAYPAL -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=AW0xCM5SKpCDyutKGP5qP5TxJvtoNr11BI7MuEc_obGsxUGSqxj-AoxqQc1H-8lrEIekF7fiI4Z9q6xf&currency=MXN">
-  </script>
-
-  <title>Alluxi Academy</title>
-  <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicon/apple-icon-57x57.png' %}">
-  <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicon/apple-icon-60x60.png' %}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{% static 'favicon/apple-icon-72x72.png' %}">
-  <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favicon/apple-icon-76x76.png' %}">
-  <link rel="apple-touch-icon" sizes="114x114" href="{% static 'favicon/apple-icon-114x114.png' %}">
-  <link rel="apple-touch-icon" sizes="120x120" href="{% static 'favicon/apple-icon-120x120.png' %}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{% static 'favicon/apple-icon-144x144.png' %}">
-  <link rel="apple-touch-icon" sizes="152x152" href="{% static 'favicon/apple-icon-152x152.png' %}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-icon-180x180.png' %}">
-  <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'favicon/android-icon-192x192.png' %}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-
-
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/one-page-wonder.css' %}" rel="stylesheet">
-  <link href="{% static 'css/custom.css' %}" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img class="img_alluxi_horizontal_color" src="{% static 'img/img-alluxi-horizontal-color@3x.png' %}"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#enroll"><button type="button" class="btn btn-primary BG">INSCRÍBETE</button></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="masthead text-white">
+<header class="masthead text-white">
     <div class="masthead-content f">
-      <div class="container">
-        <h1 class="masthead-heading mb-0 Build-Your-First-And">INTRODUCCIÓN A CIENCIA DE DATOS</h1>
-        <h2 class="masthead-subheading mb-0 mt-20 Learn-Android-App-De">¡En solo 4 sábados aprenderás las bases para convertirte en Ciéntifico de Datos!</h2>
-        <a href="https://alluxiacademy.typeform.com/to/E7QnHL"><button type="button" class="btn btn-primary BG mt-20">REGÍSTRATE</button></a>
-      </div>
+        <div class="container">
+            <h1 class="masthead-heading mb-0 Build-Your-First-And">INTRODUCCIÓN A CIENCIA DE DATOS</h1>
+            <h2 class="masthead-subheading mb-0 mt-20 Learn-Android-App-De">¡En solo 4 sábados aprenderás las bases para
+                                                                            convertirte en Ciéntifico de Datos!</h2>
+            <a href="https://alluxiacademy.typeform.com/to/E7QnHL">
+                <button type="button" class="btn btn-primary BG mt-20">REGÍSTRATE</button>
+            </a>
+        </div>
     </div>
-  </header>
+</header>
+{% endblock %}
 
-  <section>
+{% block details %}
+
+<section>
     <div class="container">
-      <div class="row align-items-center ptb-50">
-        <p class="About-this-course col-lg-12">Sobre este curso</p>
-        <div class="col-lg-6 Lorem-ipsum-dolor-si">
-          <p>
-            Aprende a generar predicciones utilizando Python y algoritmos de machine learning. En este curso aplicarás técnicas para tratar, limpiar y analizar la información; todo lo necesario para convertirte en Científico de Datos.
-          </p>
-          <p class="syl-title">
-            Se llevará a cabo en <br/> <a href="https://goo.gl/maps/U4TVNmErnUC2">WeWork Lazaro Cardenas</a>
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <div class="row">
-          <div class="col-lg-6">
-            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Coaches profesionales</p>
-          </div>
-          <div class="col-lg-6">
-            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Orientación personal</p>
-          </div>
-          <div class="col-lg-6">
-            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Certificación del curso</p>
-          </div>
-          <div class="col-lg-6">
-            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Desarrollo personal</p>
-          </div>
-          <div class="col-lg-6">
-            <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Nivel básico/intermedio</p>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center ptb-50">
-        <p class="Course-Information col-lg-12">Información del Curso</p>
-        <div class="col-lg-12 pt-45">
-        <div class="row">
-          <div class="col-lg-3 text-center">
-            <img src="{% static 'img/img-info-venue.png' %}">
-            <p class="blue-title">Sede</p>
-            <p class="Information">El curso se llevará a cabo en WeWork Lazaro Cardenas</p>
-          </div>
-          <div class="col-lg-3 text-center">
-            <img src="{% static 'img/img-info-date.png' %}">
-            <p class="blue-title">Fecha</p>
-            <p class="Information">Iniciaremos el curso sábado 3 de Agosto</p>
-          </div>
-          <div class="col-lg-3 text-center">
-            <img src="{% static 'img/img-info-timeline.png' %}">
-            <p class="blue-title">Duración</p>
-            <p class="Information">La duración del curso es de 4 semanas</p>
-          </div>
-          <div class="col-lg-3 text-center">
-            <img src="{% static 'img/img-info-schedules.png' %}">
-            <p class="blue-title">Horario</p>
-            <p class="Information">El horario del curso es de 9:00 AM a 1:00 PM</p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center ptb-50">
-        <p class="Course-Information col-lg-12">Estas empresas ya confían en nostros: </p>
-        <div class="row col-lg-12">
-          <div class="text-center col-lg-6">
-            <img class="screenit" src="{% static 'img/img_bp_screenit@2x.png' %}">
-          </div>
-          <div class="text-center col-lg-6">
-            <img class="IA" src="{% static 'img/logo_IA.png' %}">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center ptb-50">
-
-        <div class="col-lg-3 Lorem-ipsum-dolor-si text-center">
-          <p class="About-this-course col-lg-12">Instructor</p>
-          <img class="Profile-Pic" src="{% static 'img/instructor-jaime.jpg' %}">
-          <p class="Name pt-30">Jaime Figueroa</p>
-          <p class="Job-Title">Data Scientist en Banregio</p>
-          <div class="row social pt-30">
-            <!--<a href="https://github.com/gusreyes01"><img class="px-15" src="{% static 'img/img-social-github.png' %}"></a>-->
-            <a href="https://www.linkedin.com/in/jaime-figueroa/"><img class="px-15" src="{% static 'img/img-social-linkedin.png' %}"></a>
-          </div>
-          <p class="pt-30 text-left">
-            Jaime ha encontrado en la ciencia de datos un interesante punto de encuentro entre el negocio y la tecnología. Tiene experiencia en operación y desarrollo de sistemas. Ha trabajado durante más de 10 años en instituciones del sistema bancario y actualmente ejerce como científico de datos en el sistema financiero.
-          </p>
-        </div>
-        <div class="col-lg-9">
-          <p class="About-this-course col-lg-12">Temario</p>
-
-          <div class="accordion" id="accordionSyllabus">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link syl-title" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                      Semana 1
-                    </button>
-                  </h2>
-                </div>
-
-                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionSyllabus">
-                  <div class="card-body Information">
-                    <ul>
-                      <li>Anaconda</li>
-                      <li>Jupyter</li>
-                      <li>Operaciones con números</li>
-                      <li>Operaciones con cadenas</li>
-                      <li>Listas</li>
-                      <li>Índices y cortes</li>
-                      <li>Diccionarios</li>
-                      <li>Listas por compresión</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading2">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                      Semana 2
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionSyllabus">
-                  <div class="card-body Information">
-                    <ul>
-                      <li>Introducción Numpy</li>
-                      <li>Creación de arreglos</li>
-                      <li>Índices y cortes con arreglos</li>
-                      <li>Arreglos vs matrices</li>
-                      <li>Broadcasting</li>
-                      <li>Reducciones</li>
-                      <li>Introducción Matplotlib</li>
-                      <li>Histogramas, gráficos de barras, dispersión y pastel</li>
-                      <li>Figuras y ejes</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading3">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                      Semana 3
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionSyllabus">
-                  <div class="card-body Information">
-                    <ul>
-                      <li>Introducción a Pandas</li>
-                      <li>Series y DataFrames</li>
-                      <li>Operaciones con series</li>
-                      <li>Máscaras (filtros)</li>
-                      <li>índices y columnas de un Dataframe</li>
-                      <li>Agrupaciones</li>
-                      <li>Ejercicio práctica con Pandas</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading4">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                      Semana 4
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSyllabus">
-                  <div class="card-body Information">
-                    <ul>
-                      <li>Sesión práctica con Pandas</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+        <div class="row align-items-center ptb-50">
+            <p class="About-this-course col-lg-12">Sobre este curso</p>
+            <div class="col-lg-6 Lorem-ipsum-dolor-si">
+                <p>
+                    Aprende a generar predicciones utilizando Python y algoritmos de machine learning. En este curso
+                    aplicarás técnicas para tratar, limpiar y analizar la información; todo lo necesario para
+                    convertirte en Científico de Datos.
+                </p>
+                <p class="syl-title">
+                    Se llevará a cabo en <br/> <a href="https://goo.gl/maps/U4TVNmErnUC2">WeWork Lazaro Cardenas</a>
+                </p>
             </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="enroll"></div>
-  <section class="bg-primary" >
-    <div class="container">
-      <div class="row align-items-center ptb-50">
-        <div class="col-lg-6 Take-this-course-content">
-          <p class="Take-this-course col-lg-12">¡Inscríbete ahora!</p>
-          <p>
-            Una vez que tu pago haya sido confirmado te enviaremos un correo de confirmación con detalles necesarios para que inicies a programar como todo un profesional.
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <div class="payment-BG">
-            <p class="blue-title">INTRODUCCIÓN A DATA SCIENCE</p>
-            <p class="price">$7,500.00 MXN + IVA</p>
-            <p class="Information text-center">Pago Único</p>
-            <hr/>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Coaches profesionales</p>
-              </div>
-              <div class="col-lg-6">
-                <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Orientación personal</p>
-              </div>
-              <div class="col-lg-6">
-                <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Certificación del curso</p>
-              </div>
-              <div class="col-lg-6">
-                <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Desarrollo personal</p>
-              </div>
-              <div class="col-lg-6">
-                <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Nivel básico/intermedio</p>
-              </div>
-            </div>
-            <div class="text-center">
-              <div type="button" id="paypal-button-container" ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <section class="accepted-cards-bg">
-    <div class="container">
-      <div class="row align-items-center ptb-50">
-        <p class="Course-Information col-lg-12">Tambien puedes pagar directamente en <a href="#address">nuestras oficinas</a></p>
-        <div class="text-center col-lg-6">
-          <img class="izettle" src="{% static 'img/izettle.png' %}">
-        </div>
-        <div class="text-center col-lg-6">
-          <img class="accepted-cards" src="{% static 'img/izettle-tarjetas-aceptadas.png' %}">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="questions-BG">
-    <div class="container">
-      <div class="row align-items-center ptb-50 text-center">
-        <p class="About-this-course col-lg-12">Aún tienes preguntas?</p>
-        <p class="Lorem-ipsum-dolor-si col-lg-12">Déjanos tu correo y nos pondremos en contacto contigo lo antes posible.</p>
-        <div class="col-lg-12">
-          <div class="ptb-50">
-            <form id="contact-form" class="text-center" method="POST">
-                {% csrf_token %}
-                    <div class="text-center">
-                        <input id="email" type="email" class="input-size label-input-color transparent-BG" placeholder="Correo" required>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Coaches profesionales</p>
                     </div>
-                    <div class="text-center">
-                        <textarea id="content" class="ta-input-size label-input-color transparent-BG" rows="4" placeholder="Mensaje"></textarea>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Orientación personal</p>
                     </div>
-
-                <div class="small-margin-vertical pt-45">
-                <button id="send" type="submit" class="btn btn-primary BG" data-toggle="modal" data-target="#contactModal">ENVIAR</button>
-                </div>
-            </form>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-primary small-margin-sides">
-        <div class="row pt-45 footer-padding">
-            <div class="col-lg-4">
-                <img class="img-alluxi-horizontal-white" src="{% static 'img/img-alluxi-horizontal-white@3x.png' %}">
-            </div>
-            <div class="col-lg-4" id="address">
-                <p class="white-subtitle">México</p>
-                <p class="white-subcontent">América 327 Sur, Centro, Monterrey, México</p>
-                <p class="white-subcontent">hola@alluxi.mx</p>
-                <p class="white-subcontent">+52-(811)-500-1600</p>
-                <p class="white-subtitle">United States</p>
-                <p class="white-subcontent">(512) 547-3628</p>
-                <p class="white-subcontent">Virtual Office <br/> Austin, TX</p>
-            </div>
-            <div class="col-lg-4">
-                <p class="white-subtitle">Follow Us</p>
-                <div class="row small-margin-sides">
-                    <div class="small-margin-bottom small-margin-sides">
-                        <a href="https://mx.linkedin.com/company/alluxi-mx"><img class="ic-social-linkedin" src="{% static 'img/ic-social-linkedin.png' %}"></a>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Certificación del curso</p>
                     </div>
-                    <div class="small-margin-bottom small-margin-sides">
-                        <a href="https://twitter.com/AlluxiMx"><img class="ic-social-twitter" src="{% static 'img/ic-social-twitter.png' %}"></a>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Desarrollo personal</p>
                     </div>
-                    <div class="small-margin-bottom small-margin-sides">
-                        <a href="https://www.facebook.com/alluxiacademy/"><img class="ic-social-facebook" src="{% static 'img/ic-social-facebook.png' %}"></a>
-                    </div>
-                    <div class="small-margin-bottom small-margin-sides">
-                        <a href="https://www.instagram.com/alluximx/"><img class="ic-social-facebook" src="{% static 'img/ic-social-instagram.png' %}"></a>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Nivel básico/intermedio</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-12">
-            <div class="footer-text text-center small-margin-vertical">Alluxi  © 2018 All rights reserved</div>
+    </div>
+</section>
+{% endblock %}
+
+{% block subjects %}
+
+<section>
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+            <p class="Course-Information col-lg-12">Información del Curso</p>
+            <div class="col-lg-12 pt-45">
+                <div class="row">
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-venue.png' %}">
+                        <p class="blue-title">Sede</p>
+                        <p class="Information">El curso se llevará a cabo en WeWork Lazaro Cardenas</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-date.png' %}">
+                        <p class="blue-title">Fecha</p>
+                        <p class="Information">Iniciaremos el curso sábado 3 de Agosto</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-timeline.png' %}">
+                        <p class="blue-title">Duración</p>
+                        <p class="Information">La duración del curso es de 4 semanas</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-schedules.png' %}">
+                        <p class="blue-title">Horario</p>
+                        <p class="Information">El horario del curso es de 9:00 AM a 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
+{% endblock %}
 
+{% block paypal %}
 
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v3.2'
-      });
-    };
+<section>
+    <div class="container">
+        <div class="row align-items-center ptb-50">
 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+            <div class="col-lg-3 Lorem-ipsum-dolor-si text-center">
+                <p class="About-this-course col-lg-12">Instructor</p>
+                <img class="Profile-Pic" src="{% static 'img/instructor-jaime.jpg' %}">
+                <p class="Name pt-30">Jaime Figueroa</p>
+                <p class="Job-Title">Data Scientist en Banregio</p>
+                <div class="row social pt-30">
+                    <!--<a href="https://github.com/gusreyes01"><img class="px-15" src="{% static 'img/img-social-github.png' %}"></a>-->
+                    <a href="https://www.linkedin.com/in/jaime-figueroa/"><img class="px-15"
+                                                                               src="{% static 'img/img-social-linkedin.png' %}"></a>
+                </div>
+                <p class="pt-30 text-left">
+                    Jaime ha encontrado en la ciencia de datos un interesante punto de encuentro entre el negocio y la
+                    tecnología. Tiene experiencia en operación y desarrollo de sistemas. Ha trabajado durante más de 10
+                    años en instituciones del sistema bancario y actualmente ejerce como científico de datos en el
+                    sistema financiero.
+                </p>
+            </div>
+            <div class="col-lg-9">
+                <p class="About-this-course col-lg-12">Temario</p>
 
-  <!-- Your customer chat code -->
-  <div class="fb-customerchat"
-    attribution=setup_tool
-    page_id="2124283304318298"
-    logged_in_greeting="¡Hola! ¿En que te podemos ayudar?"
-    logged_out_greeting="¡Hola! ¿En que te podemos ayudar?">
-  </div>
+                <div class="accordion" id="accordionSyllabus">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link syl-title" type="button" data-toggle="collapse"
+                                        data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Semana 1
+                                </button>
+                            </h2>
+                        </div>
 
-  <script>
-    paypal.Buttons({
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '8700'
-            }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Transaction completed by ' + details.payer.name.given_name);
-          // Call your server to save the transaction
-          return fetch('/paypal-transaction-complete', {
-            method: 'post',
-            body: JSON.stringify({
-              orderID: data.orderID
-            })
-          });
-        });
-      }
-    }).render('#paypal-button-container');
-  </script>
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-  {% load sweetify %}
-  {% sweetify %}
-
-</body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51150916-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-51150916-1');
-</script>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1147585515348021');
-  fbq('track', 'PageView');
-</script>
-
-</html>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                             data-parent="#accordionSyllabus">
+                            <div class="card-body Information">
+                                <ul>
+                                    <li>Anaconda</li>
+                                    <li>Jupyter</li>
+                                    <li>Operaciones con números</li>
+                                    <li>Operaciones con cadenas</li>
+                                    <li>Listas</li>
+                                    <li>Índices y cortes</li>
+                                    <li>Diccionarios</li>
+                                    <li>Listas por compresión</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse"
+                                        data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Semana 2
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                             data-parent="#accordionSyllabus">
+                            <div class="card-body Information">
+                                <ul>
+                                    <li>Introducción Numpy</li>
+                                    <li>Creación de arreglos</li>
+                                    <li>Índices y cortes con arreglos</li>
+                                    <li>Arreglos vs matrices</li>
+                                    <li>Broadcasting</li>
+                                    <li>Reducciones</li>
+                                    <li>Introducción Matplotlib</li>
+                                    <li>Histogramas, gráficos de barras, dispersión y pastel</li>
+                                    <li>Figuras y ejes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse"
+                                        data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Semana 3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                             data-parent="#accordionSyllabus">
+                            <div class="card-body Information">
+                                <ul>
+                                    <li>Introducción a Pandas</li>
+                                    <li>Series y DataFrames</li>
+                                    <li>Operaciones con series</li>
+                                    <li>Máscaras (filtros)</li>
+                                    <li>índices y columnas de un Dataframe</li>
+                                    <li>Agrupaciones</li>
+                                    <li>Ejercicio práctica con Pandas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed syl-title" type="button" data-toggle="collapse"
+                                        data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Semana 4
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                             data-parent="#accordionSyllabus">
+                            <div class="card-body Information">
+                                <ul>
+                                    <li>Sesión práctica con Pandas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
