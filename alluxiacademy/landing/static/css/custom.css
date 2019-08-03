@@ -1,426 +1,443 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-.screenit{
-    width:200px;
+.company-logos > div {
+    /*margin: 5%;*/
+}
+
+.udem {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.simpat {
+    margin-top: 25px;
+    width: 90%;
+}
+
+.screenit {
+    width: 200px;
 }
 
 .BG {
-  width: 180px;
-  height: 44px;
-  border-radius: 6px;
-  box-shadow: 0 5px 10px 4px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 44px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
-.mt-20{
-    margin-top:20px;
+.mt-20 {
+    margin-top: 20px;
 }
 
-.ptb-50{
-    padding-top:50px;
-    padding-bottom:50px;
+.ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.pt-45{
-  padding-top:45px;
+.pt-45 {
+    padding-top: 45px;
 }
 
-.px-15{
-  padding-left: 15px;
-  padding-right: 15px;
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.pt-30{
-  padding-top:30px;
+.pt-30 {
+    padding-top: 30px;
 }
 
-.social{
-  display:inline-flex;
+.social {
+    display: inline-flex;
 }
 
 .Profile-Pic {
-  border-radius: 220px;
-  width: 220px;
-  height: 220px;
+    border-radius: 220px;
+    width: 220px;
+    height: 220px;
 }
 
 .img_alluxi_horizontal_color {
-  width: 391px;
-  height: 107px;
-  object-fit: contain;
+    width: 391px;
+    height: 107px;
+    object-fit: contain;
 }
 
 .ic_method_check {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .Build-Your-First-And {
-  font-family: 'Source Sans Pro';
-  font-size: 40px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.3;
-  letter-spacing: 1.4px;
-  color: var(--white);
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 1.4px;
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
 }
 
 .Learn-Android-App-De {
-  font-family: 'Source Sans Pro';
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.9px;
-  color: var(--white);
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
 }
 
 .other-courses-head {
-  text-align: center;
-  height: 52px;
-  font-family: 'Source Sans Pro';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.73;
-  letter-spacing: 1.1px;
-  color: #007bff;
-  -webkit-font-smoothing: antialiased;
+    text-align: center;
+    height: 52px;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.73;
+    letter-spacing: 1.1px;
+    color: #007bff;
+    -webkit-font-smoothing: antialiased;
 }
 
 .About-this-course {
-  height: 52px;
-  font-family: 'Source Sans Pro';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.73;
-  letter-spacing: 1.1px;
-  color: #007bff;
-  -webkit-font-smoothing: antialiased;
+    height: 52px;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.73;
+    letter-spacing: 1.1px;
+    color: #007bff;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Lorem-ipsum-dolor-si {
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 0.6px;
-  color: midnightblue;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: 0.6px;
+    color: midnightblue;
+    -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  height: 62px;
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  color: black;
-  -webkit-font-smoothing: antialiased;
+    height: 62px;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
 }
 
 .pay-title {
-  height: 62px;
-  font-family: 'Source Sans Pro';
-  font-size: 16px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  color: black;
-  -webkit-font-smoothing: antialiased;
+    height: 62px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Course-Information {
-  font-family: 'Source Sans Pro';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.73;
-  letter-spacing: 1.1px;
-  text-align: center;
-  color: #007bff;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.73;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #007bff;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Information {
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 0.6px;
-  color: gray;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: 0.6px;
+    color: gray;
+    -webkit-font-smoothing: antialiased;
 }
 
 .blue-title {
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: midnightblue;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: midnightblue;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Name {
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: midnightblue;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: midnightblue;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Job-Title {
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: black;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: black;
+    -webkit-font-smoothing: antialiased;
 }
 
 .syl-title {
-  font-family: 'Source Sans Pro';
-  font-size: 24px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.9px;
-  color: midnightblue;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    color: midnightblue;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Take-this-course {
-  font-family: 'Source Sans Pro';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.73;
-  letter-spacing: 1.1px;
-  color: white;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.73;
+    letter-spacing: 1.1px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Take-this-course-content {
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 0.6px;
-  color: white;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: 0.6px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
 }
 
 .payment-BG {
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px 10px rgba(0, 0, 0, 0.05);
-  background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
 }
 
 .price {
-  font-family: 'Source Sans Pro';
-  font-size: 40px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.3;
-  letter-spacing: 1.4px;
-  text-align: center;
-  color: #007bff;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #007bff;
+    -webkit-font-smoothing: antialiased;
 }
 
 .questions-BG {
-  background-color: rgba(103, 169, 243, 0.05);
+    background-color: rgba(103, 169, 243, 0.05);
 }
 
-.syl-title:hover{
-  text-decoration: none;
+.syl-title:hover {
+    text-decoration: none;
 }
 
-.syl-title:focus{
-  text-decoration: none;
+.syl-title:focus {
+    text-decoration: none;
 }
 
-.align-middle{
-  vertical-align: middle;
+.align-middle {
+    vertical-align: middle;
 }
 
 .input-size {
-  	width: 620px;
-  	height: 74px;
-  	margin: 0 auto;
-	outline: none;
-	box-shadow: none;
-	border-top: transparent !important;
-	border-left: transparent !important;
-	border-right: transparent !important;
-	border-bottom: 2px solid !important;
-	border-bottom-color: #007bff !important;
+    width: 620px;
+    height: 74px;
+    margin: 0 auto;
+    outline: none;
+    box-shadow: none;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 2px solid !important;
+    border-bottom-color: #007bff !important;
 }
 
 .label-input-color {
-	font-family: 'Source Sans Pro';
-	font-size: 24px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.33;
-	letter-spacing: 0.9px;
-	text-align: left;
-	margin-bottom: 1%;
-	color: midnightblue !important;
-	-webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    text-align: left;
+    margin-bottom: 1%;
+    color: midnightblue !important;
+    -webkit-font-smoothing: antialiased;
 }
 
 .ta-input-size {
-  	width: 620px;
-  	margin: 0 auto;
-	outline: none;
-	box-shadow: none;
-	border-top: transparent !important;
-	border-left: transparent !important;
-	border-right: transparent !important;
-	border-bottom: 2px solid !important;
-	border-bottom-color: #007bff !important;
+    width: 620px;
+    margin: 0 auto;
+    outline: none;
+    box-shadow: none;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 2px solid !important;
+    border-bottom-color: #007bff !important;
 }
 
-.transparent-BG{
-  background-color: transparent;
+.transparent-BG {
+    background-color: transparent;
 }
 
-.small-margin-sides{
-	padding-left:20px;
-	padding-right:20px;
+.small-margin-sides {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.footer-padding{
-	padding-top:80px;
+.footer-padding {
+    padding-top: 80px;
 }
 
-.img-alluxi-horizontal-white{
-    width:250px;
+.img-alluxi-horizontal-white {
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.white-subcontent, .white-subtitle{
-		text-align: center;
+.white-subcontent, .white-subtitle {
+    text-align: center;
 }
 
 .white-subtitle {
-	font-family: 'Source Sans Pro';
-	font-size: 18px;
-	font-weight: 600;
-	letter-spacing: 0.6px;
-	text-align: left;
-	color: #ffffff !important;
-	-webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #ffffff !important;
+    -webkit-font-smoothing: antialiased;
 }
 
 .white-subcontent {
-	font-family: 'Source Sans Pro';
-	font-size: 16px;
-	font-weight: 300;
-	letter-spacing: 0.6px;
-	text-align: justify;
-	color: #ffffff !important;
-	-webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    text-align: justify;
+    color: #ffffff !important;
+    -webkit-font-smoothing: antialiased;
 }
 
-.small-margin-bottom{
-	margin-bottom: 5%;
+.small-margin-bottom {
+    margin-bottom: 5%;
 }
 
-.ic-social-linkedin, .ic-social-twitter, .ic-social-facebook{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+.ic-social-linkedin, .ic-social-twitter, .ic-social-facebook {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.small-margin-vertical{
-	padding-top:20px;
-	padding-bottom:20px;
+.small-margin-vertical {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer-text {
-	font-family: 'Source Sans Pro';
-	font-size: 16px;
-	letter-spacing: 0.6px;
-	text-align: center;
-	color: #67a9f3 !important;
-	-webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #67a9f3 !important;
+    -webkit-font-smoothing: antialiased;
 }
 
-.accepted-cards{
+.accepted-cards {
     width: 500px;
 }
 
-.izettle{
+.izettle {
     width: 200px;
 }
 
-.IA{
-    width:100px;
+.IA {
+    width: 100px;
 }
 
-.accepted-cards-bg{
+.accepted-cards-bg {
     background-color: #f7f7f6;
 }
 
 @media only screen and (max-width: 600px) {
-  .accepted-cards{
-    width: 250px;
-    }
-   .img_alluxi_horizontal_color {
-    width: 191px;
-    height: 57px;
-    object-fit: contain;
+    .accepted-cards {
+        width: 250px;
     }
 
-   .input-size{
-       width:250px;
-   }
-   .ta-input-size{
-       width:250px;
-   }
-   header.masthead{
-       margin-top:80px;
-   }
+    .img_alluxi_horizontal_color {
+        width: 191px;
+        height: 57px;
+        object-fit: contain;
+    }
+
+    .input-size {
+        width: 250px;
+    }
+
+    .ta-input-size {
+        width: 250px;
+    }
+
+    header.masthead {
+        margin-top: 80px;
+    }
 }
