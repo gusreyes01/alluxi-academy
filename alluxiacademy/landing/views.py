@@ -2,6 +2,7 @@ import sweetify
 from django.core.mail import send_mail
 from django.shortcuts import render
 from django.template.loader import render_to_string
+from .models import Course
 
 
 def send_mail_wrapper(title, template, context, recipients):
@@ -40,7 +41,6 @@ def introduccion_dg(request):
     return render(request, 'landing/index-dg.html')
 
 
-
 def introduccion_ds(request):
     if request.method == 'POST':
         _submit_form(request)
@@ -51,5 +51,23 @@ def introduccion_ds(request):
 def python_crash_course(request):
     if request.method == 'POST':
         _submit_form(request)
+    first_course = Course.objects.get()
+    courses = Course.objects.all()
+    context = {'first_course':  first_course,
+               'courses': courses}
+    return render(request, 'landing/index-py.html', context)
 
-    return render(request, 'landing/index-py.html')
+
+def get_course(request, course_id=0):
+    if request.method == 'POST':
+        _submit_form(request)
+
+    if course_id == 0:
+        first_course = Course.objects.first()
+    else:
+        first_course = Course.objects.get(id=course_id)
+
+    courses = Course.objects.all()
+    context = {'first_course': first_course, 'courses': courses}
+    return render(request, 'landing/index-course.html', context)
+
