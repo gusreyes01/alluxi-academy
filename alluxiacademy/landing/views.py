@@ -51,11 +51,8 @@ def introduccion_ds(request):
 def python_crash_course(request):
     if request.method == 'POST':
         _submit_form(request)
-    first_course = Course.objects.get()
-    courses = Course.objects.all()
-    context = {'first_course':  first_course,
-               'courses': courses}
-    return render(request, 'landing/index-py.html', context)
+
+    return render(request, 'landing/index-py.html')
 
 
 def get_course(request, course_id=0):
@@ -63,11 +60,11 @@ def get_course(request, course_id=0):
         _submit_form(request)
 
     if course_id == 0:
-        first_course = Course.objects.first()
+        course = Course.objects.get(featured=True)
     else:
-        first_course = Course.objects.get(id=course_id)
+        course = Course.objects.get(id=course_id)
 
-    courses = Course.objects.all()
-    context = {'first_course': first_course, 'courses': courses}
+    courses = Course.objects.all().order_by('-id')[:3]
+    context = {'course': course, 'courses': courses}
     return render(request, 'landing/index-course.html', context)
 
