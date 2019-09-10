@@ -117,7 +117,7 @@
 <section class="accepted-cards-bg">
     <div class="container">
         <div class="row align-items-center ptb-50">
-            <p class="Course-Information col-lg-12">Tambien puedes pagar directamente en <a href="#address">nuestras
+            <p class="Course-Information col-lg-12">También puedes pagar directamente en <a href="#address">nuestras
                                                                                                             oficinas</a>
             </p>
             <div class="text-center col-lg-6">
@@ -168,52 +168,21 @@
         <div class="col-md-12">
             <h1 class="other-courses-head"> ¿Te interesa otro curso? </h1>
         </div>
+        
+        {% for course in courses %}
         <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
                 <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
                 <div class="card-body">
                     <h4 class="card-title">
-                        <a href="{% url 'introduccion_ds' %}">Data Science</a>
+                        <a href="{% url 'get_course' course.id %}">{{course.title}}</a>
                     </h4>
-                    <p class="card-text">Aprende a generar predicciones utilizando Python y algoritmos de machine
-                                         learning. En este curso
-                                         aplicarás técnicas para tratar, limpiar y analizar la información; todo lo
-                                         necesario para
-                                         convertirte en Científico de Datos.</p>
+                    <p class="card-text">{{course.summary}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="{% url 'introduccion_dg' %}">Data Governance</a>
-                    </h4>
-                    <p class="card-text">Proveer a los participantes de las bases
-                                         teóricas y prácticas para la creación de un
-                                         Programa de Gobierno de Datos, generando sus
-                                         propios casos de uso y herramientas básicas
-                                         para su ejecución.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="{% url 'python_crash_course' %}">Python Crash Course</a>
-                    </h4>
-                    <p class="card-text">En este curso aprenderas a utilizar los conocimientos y herramientas
-                                         proporcionadas por el
-                                         instructor para aprender a desarrollar en Python de la manera mas eficiente a
-                                         traves de desafiantes
-                                         proyectos.</p>
-                </div>
-            </div>
-        </div>
-
+        {% endfor %}
+    </div>      
 </section>
 
 <!-- Footer -->

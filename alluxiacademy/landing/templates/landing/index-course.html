@@ -1,0 +1,225 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block header %}
+<header class="masthead text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0 Build-Your-First-And">{{course.title}}</h1>
+            <h2 class="masthead-subheading mb-0 mt-20 Learn-Android-App-De">{{course.advertising_phrase}}</h2>
+            <a href="https://alluxi.typeform.com/to/E7QnHL">
+                <button type="button" class="btn btn-primary BG mt-20">MÁS INFORMACIÓN</button>
+            </a>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block subheader %}
+<section>
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+            <p class="About-this-course col-lg-12">Sobre este curso</p>
+            <div class="col-lg-6 Lorem-ipsum-dolor-si">
+                <p>
+                    {{course.description}}
+                </p>
+                <p class="syl-title">
+                    Se llevará a cabo en <br/> <a href="https://goo.gl/maps/U4TVNmErnUC2">{{course.location}}</a>
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Coaches profesionales</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Orientación personal</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Certificación del curso</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Desarrollo personal</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="title"><img src="{% static 'img/ic-method-check.png' %}">Nivel básico/intermedio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block details %}
+<section>
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+            <p class="Course-Information col-lg-12">Información del Curso</p>
+            <div class="col-lg-12 pt-45">
+                <div class="row">
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-venue.png' %}">
+                        <p class="blue-title">Sede</p>
+                        <p class="Information">El curso se llevará a cabo en {{course.location}}</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-date.png' %}">
+                        <p class="blue-title">Fecha</p>
+                        <p class="Information">
+                            {%if course.start_date == None %}
+                                Iniciaremos el curso próximamente 
+                            {% else %}
+                                Iniciaremos el curso el {{course.start_date|date:'d-m-Y'}}
+                            {% endif %}
+                        
+                        </p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-timeline.png' %}">
+                        <p class="blue-title">Duración</p>
+                        <p class="Information">La duración del curso es de {{course.duration_in_weeks}} semanas</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="{% static 'img/img-info-schedules.png' %}">
+                        <p class="blue-title">Horario</p>
+                        <p class="Information">El horario del curso es de {{course.start_hour.hour}} a {{course.finish_hour.hour}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block subjects %}
+<section>
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+
+            <div class="col-lg-3 Lorem-ipsum-dolor-si text-center">
+                <p class="About-this-course col-lg-12">Instructor</p>
+                <img class="Profile-Pic" src="{{ course.instructor.photo.url}}">
+                <p class="Name pt-30">{{course.instructor.name}} {{course.instructor.last_name}}</p>
+                <p class="Job-Title">{{course.instructor.title}}</p>
+                <div class="row social pt-30">
+                    {%if course.instructor.linkedin_account_link  %}
+                        <a href="{{course.instructor.linkedin_account_link}}"><img class="px-15"
+                                                                 src="{% static 'img/img-social-linkedin.png' %}"></a>
+                    {% endif %}
+                    {%if course.instructor.github_account_link  %}
+                        <a href="{{course.instructor.github_account_link}}"><img class="px-15"
+                                                                                              src="{% static 'img/img-social-github.png' %}"></a>
+                    {% endif %}
+                </div>
+                <p class="pt-30 text-left">
+                    {{course.instructor.work_history}}
+                </p>
+            </div>
+            <div class="col-lg-9">
+                <p class="About-this-course col-lg-12">Temario</p>
+                <div class="accordion" id="accordionSyllabus">
+
+                {% for phase in course.phase_set.all %}
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">                                                       
+                                <button class="btn btn-link syl-title" 
+                                        type="button" 
+                                        data-toggle="collapse"
+                                        data-target="#collapse{{forloop.counter}}"                                         
+                                        aria-expanded="True"                                         
+                                        aria-controls="collapse{{forloop.counter}}">
+                                    {{phase.name}}
+                                </button>                                
+                            </h2>
+                        </div>
+                        {%if forloop.counter == 1 %}  
+                        <div id="collapse{{forloop.counter}}" class="collapse show" aria-labelledby="heading{{forloop.counter}}"
+                             data-parent="#accordionSyllabus">
+                            <div class="card-body Information">
+                                <ul>
+                                   {% for topic in phase.topic_set.all %}
+                                     <li>{{topic.name}}</li>
+                                   {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div id="collapse{{forloop.counter}}" class="collapse" aria-labelledby="heading{{forloop.counter}}"
+                            data-parent="#accordionSyllabus">
+                            <div class="card-body Information">
+                                <ul>
+                                {% for topic in phase.topic_set.all %}
+                                    <li>{{topic.name}}</li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block paypal %}
+<section class="bg-primary">
+    <div class="container">
+        <div class="row align-items-center ptb-50">
+            <div class="col-lg-6 Take-this-course-content">
+                <p class="Take-this-course col-lg-12">¡Inscríbete ahora!</p>
+                <p>
+                    Una vez que tu pago haya sido confirmado te enviaremos un correo de confirmación con detalles
+                    necesarios para que inicies a programar como todo un profesional.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="payment-BG">
+                    <p class="blue-title">PYTHON CRASH COURSE</p>
+                    <p class="price">${{course.price|floatformat:-2}} MXN + IVA</p>
+                    <p class="Information text-center">Pago Único</p>
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Coaches profesionales
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Orientación personal
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Certificación del
+                                                                                                   curso</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Desarrollo personal
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="pay-title"><img src="{% static 'img/ic-method-check.png' %}">Nivel
+                                                                                                   básico/intermedio</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div type="button" id="paypal-button-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+
