@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import FileExtensionValidator
 
 class Status(models.Model):    
     name = models.CharField(max_length=100)   
@@ -29,7 +30,7 @@ class Instructor(models.Model):
     work_history = models.CharField(max_length=1000, default="")
     linkedin_account_link = models.CharField(max_length=150, blank=True)
     github_account_link = models.CharField(max_length=150, default="", blank=True)
-    photo = models.ImageField(upload_to="media/", blank=True)
+    photo = models.ImageField(upload_to="", blank=True,validators=[FileExtensionValidator(['jpg','png'])])
     careers = models.ManyToManyField(Career, blank=True)
     status = models.ForeignKey(Status, on_delete=models.CASCADE)
 
