@@ -3,7 +3,8 @@ from django.core.mail import send_mail
 from django.shortcuts import render
 from django.template.loader import render_to_string
 from .models import Course
-
+from django.conf import settings
+import pdb
 
 def send_mail_wrapper(title, template, context, recipients):
     html_message = render_to_string(
@@ -54,6 +55,24 @@ def python_crash_course(request):
 
     return render(request, 'landing/index-py.html')
 
+def image_url_fixed(url_to_check, request):
+    url_fixed = "https://via.placeholder.com/150"
+    # domain = request.build_absolute_uri('/')[:-1]
+    # try:
+    #     conn = httplib.HTTPConnection(domain)
+    #     pdb.set_trace()  
+    #     conn.request('HEAD', url_to_check)
+    #     pdb.set_trace()        
+    #     response = conn.getresponse()
+    #     conn.close()
+    #     breakpoint() 
+    # except:
+    #     return url_fixed
+
+    # if (response.status == 200):
+    #     return url_to_check        
+
+    return url_fixed
 
 def get_course(request, course_id=0):
     if request.method == 'POST':
@@ -65,6 +84,8 @@ def get_course(request, course_id=0):
         course = Course.objects.get(id=course_id)
 
     courses = Course.objects.all().order_by('-id')[:3]
-    context = {'course': course, 'courses': courses}
+    image_url  = image_url_fixed(course.instructor.photo.url, request)
+    context = {'course': course, 'courses': courses, 'image_url_fixed': image_url}
+          
     return render(request, 'landing/index-course.html', context)
 
