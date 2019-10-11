@@ -175,7 +175,7 @@
                 <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
                 <div class="card-body">
                     <h4 class="card-title">
-                        <a href="{% url 'get_course' course.id %}">{{course.title}}</a>
+                        <a href="{% url 'get_course' course.slug %}">{{course.title}}</a>
                     </h4>
                     <p class="card-text">{{course.summary}}</p>
                 </div>

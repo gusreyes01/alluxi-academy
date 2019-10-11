@@ -24,7 +24,7 @@ sudo apt-get install libmysqlclient-dev
 In your console run:
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Authors

@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from .models import Course
 from django.conf import settings
 import pdb
+import requests
 
 def send_mail_wrapper(title, template, context, recipients):
     html_message = render_to_string(
@@ -57,31 +58,25 @@ def python_crash_course(request):
 
 def image_url_fixed(url_to_check, request):
     url_fixed = "https://via.placeholder.com/150"
-    # domain = request.build_absolute_uri('/')[:-1]
-    # try:
-    #     conn = httplib.HTTPConnection(domain)
-    #     pdb.set_trace()  
-    #     conn.request('HEAD', url_to_check)
-    #     pdb.set_trace()        
-    #     response = conn.getresponse()
-    #     conn.close()
-    #     breakpoint() 
-    # except:
-    #     return url_fixed
 
-    # if (response.status == 200):
-    #     return url_to_check        
+    if (url_to_check == "" or url_to_check == None):
+        return url_fixed
 
+    domain = request.build_absolute_uri('/')[:-1]    
+    response = requests.get(domain+url_to_check)
+
+    if (response.status_code == 200):
+        return url_to_check 
     return url_fixed
 
-def get_course(request, course_id=0):
+def get_course(request, slug = ""):
     if request.method == 'POST':
         _submit_form(request)
 
-    if course_id == 0:
+    if slug == "":
         course = Course.objects.get(featured=True)
     else:
-        course = Course.objects.get(id=course_id)
+        course = Course.objects.get(slug=slug)
 
     courses = Course.objects.all().order_by('-id')[:3]
     image_url  = image_url_fixed(course.instructor.photo.url, request)
