@@ -22,7 +22,6 @@ def _submit_form(request):
     try:
         email = request.POST.get('email')
         content = request.POST.get('content')
-
         context = {
             'email': email,
             'content': content,
@@ -34,27 +33,6 @@ def _submit_form(request):
         sweetify.success(request, '¡Gracias por tu mensaje! Nos pondremos en contacto contigo a la brevedad.')
     except Exception as e:
         sweetify.error(request, 'Error: ' + str(e))
-
-
-def introduccion_dg(request):
-    if request.method == 'POST':
-        _submit_form(request)
-
-    return render(request, 'landing/index-dg.html')
-
-
-def introduccion_ds(request):
-    if request.method == 'POST':
-        _submit_form(request)
-
-    return render(request, 'landing/index-ds.html')
-
-
-def python_crash_course(request):
-    if request.method == 'POST':
-        _submit_form(request)
-
-    return render(request, 'landing/index-py.html')
 
 def image_url_fixed(url_to_check, request):
     url_fixed = "https://via.placeholder.com/150"
