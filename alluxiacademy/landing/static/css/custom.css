@@ -415,7 +415,22 @@ html {
 }
 
 .accepted-cards-bg {
-    background-color: #f7f7f6;
+    background-color: #f7f7f6;    
+}
+
+.join-us-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: rgb(122, 117, 120);
+
+}
+
+.cintillo-bottom {
+    background-color: rgb(243,245,247);    
+    padding-bottom: 3rem;
 }
 
 @media only screen and (max-width: 600px) {

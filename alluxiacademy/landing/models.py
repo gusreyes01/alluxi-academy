@@ -1,5 +1,7 @@
 from django.db import models
 from django.core.validators import FileExtensionValidator
+from autoslug import AutoSlugField
+from django.utils.text import slugify
 
 class Status(models.Model):    
     name = models.CharField(max_length=100)   
@@ -33,12 +35,20 @@ class Instructor(models.Model):
     photo = models.FileField(null=True, verbose_name='Foto instructor')
     careers = models.ManyToManyField(Career, blank=True)
     status = models.ForeignKey(Status, on_delete=models.CASCADE)
+    slug = AutoSlugField(null=True, unique= True, populate_from='name', default=None)
 
     def __str__(self):
         return self.name + " " + self.last_name
 
+    def save(self, *args, **kwargs):
+        names = [slugify(self.name), slugify(self.last_name)]
+        if(self.last_second_name != ""):
+            names.append(self.last_second_name)
+        self.slug = '-'.join(names)
+        super(Instructor, self).save(*args, **kwargs)
+
 class Course(models.Model):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=500)
     advertising_phrase = models.CharField(max_length=500, default="")
     description = models.CharField(max_length=750)
     summary = models.CharField(max_length=750, default="")
@@ -51,6 +61,7 @@ class Course(models.Model):
     price = models.FloatField(default=0)
     status = models.ForeignKey(Status, on_delete=models.CASCADE)
     featured = models.BooleanField(default=False)
+    slug = AutoSlugField(null=True, unique= True, populate_from='title', default=None)
 
     def __str__(self):
         return self.title 

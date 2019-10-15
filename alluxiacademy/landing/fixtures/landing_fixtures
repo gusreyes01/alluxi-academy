@@ -1,0 +1,942 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$Jl2PC6zyZeBr$3Hg18sShspyA9OFpYlQ7xPWpYEYxTnGTsTVEJGXgIx0=",
+        "last_login": "2019-10-10T14:42:19.858Z",
+        "is_superuser": true,
+        "username": "alluxi",
+        "first_name": "",
+        "last_name": "",
+        "email": "alluxi@email.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-10-10T14:40:39.575Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "landing.status",
+    "pk": 1,
+    "fields": {
+        "name": "Active",
+        "description": "Active"
+    }
+},
+{
+    "model": "landing.status",
+    "pk": 2,
+    "fields": {
+        "name": "Inactive",
+        "description": "Inactive"
+    }
+},
+{
+    "model": "landing.instructor",
+    "pk": 1,
+    "fields": {
+        "name": "Adriana",
+        "last_name": "Cordero",
+        "last_second_name": "",
+        "age": 35,
+        "title": "Data Governance Expert",
+        "current_job": "Data Governance Expert",
+        "work_history": "Se ha desempe\u00f1ado como Arquitecta de Datos y/o Consultora de Gobierno de Datos en las industrias de Manufactura, Banca, Telecomunicaciones, Alimentos y Bebidas, tanto en M\u00e9xico como en el extranjero. A lo largo de su 25 a\u00f1os de trayectoria en la tecnolog\u00eda, ha podido observar de primera mano c\u00f3mo permite evolucionar a las empresas e individuos. Escritora entusiasta de temas sobre datos y nuevas tecnolog\u00edas, buscando siempre la forma en que se relacionan entre s\u00ed y su medio ambiente. Es Licenciada en Inform\u00e1tica Administrativa por parte de la Universidad del Norte (UN), y cuenta con un Master en Tecnolog\u00edas de la Informaci\u00f3n de la Universidad Abierta de Catalu\u00f1a (UOC).",
+        "linkedin_account_link": "https://www.linkedin.com/in/adriana-cordero-947a2019/",
+        "github_account_link": "",
+        "photo": "instructor-adriana.png",
+        "status": 1,
+        "slug": "adriana-cordero",
+        "careers": []
+    }
+},
+{
+    "model": "landing.instructor",
+    "pk": 2,
+    "fields": {
+        "name": "Gustavo",
+        "last_name": "Reyes",
+        "last_second_name": "",
+        "age": 30,
+        "title": "Desarrollador Python",
+        "current_job": "Desarrollador Python",
+        "work_history": "\u00a1Hola! Soy un desarrollador con 6 a\u00f1os de experiencia en Python. Actualmente soy CTO en Alluxi con clientes en M\u00e9xico y Estados Unidos. Soy un apasionado de la tecnolog\u00eda, el caf\u00e9, el futbol y la cerveza. \u00a1Estoy ansioso por compartir mis conocimientos dentro del curso!",
+        "linkedin_account_link": "https://github.com/gusreyes01",
+        "github_account_link": "https://www.linkedin.com/in/gustavo-reyes-quiroga-264b3a13",
+        "photo": "instructor.png",
+        "status": 1,
+        "slug": "gustavo-reyes",
+        "careers": []
+    }
+},
+{
+    "model": "landing.instructor",
+    "pk": 3,
+    "fields": {
+        "name": "Jaime",
+        "last_name": "Figueroa",
+        "last_second_name": "",
+        "age": 30,
+        "title": "Data Scientist en Banregio",
+        "current_job": "Data Scientist en Banregio",
+        "work_history": "Jaime ha encontrado en la ciencia de datos un interesante punto de encuentro entre el negocio y la tecnolog\u00eda. Tiene experiencia en operaci\u00f3n y desarrollo de sistemas. Ha trabajado durante m\u00e1s de 10 a\u00f1os en instituciones del sistema bancario y actualmente ejerce como cient\u00edfico de datos en el sistema financiero.",
+        "linkedin_account_link": "https://www.linkedin.com/in/jaime-figueroa/",
+        "github_account_link": "",
+        "photo": "instructor-jaime.jpg",
+        "status": 1,
+        "slug": "jaime-figueroa",
+        "careers": []
+    }
+},
+{
+    "model": "landing.course",
+    "pk": 1,
+    "fields": {
+        "title": "C\u00f3mo crear e iniciar un Programa de Gobierno de Datos",
+        "advertising_phrase": "Proveer a los participantes de las bases te\u00f3ricas y pr\u00e1cticas para la creaci\u00f3n de un Programa de Gobierno de Datos, generando sus propios casos de uso y herramientas b\u00e1sicas para su ejecuci\u00f3n",
+        "description": "El curso esta dividido en tres tipos de m\u00f3dulos; te\u00f3rico, que explica los conceptos b\u00e1sicos, metodolog\u00edas, beneficios y buenas pr\u00e1cticas en las que se basa un Programa de Gobierno de Datos; te\u00f3rico-pr\u00e1ctico, lleva de la mano a los participantes en la creaci\u00f3n de las herramientas b\u00e1sicas que componen un Programa de GD; pr\u00e1ctico, les permitir\u00e1 a los participantes revisar las herramientas creadas para sus Programas de GD y exponerlas ante el grupo para su enriquecimiento.",
+        "summary": "Proveer a los participantes de las bases te\u00f3ricas y pr\u00e1cticas para la creaci\u00f3n de un Programa de Gobierno de Datos, generando sus  propios casos de uso y herramientas b\u00e1sicas para su ejecuci\u00f3n.",
+        "duration_in_weeks": 4,
+        "location": "WeWork L\u00e1zaro Cardenas",
+        "start_date": "2019-08-03",
+        "start_hour": "2019-10-01T09:00:00Z",
+        "finish_hour": "2019-10-01T13:00:00Z",
+        "instructor": 1,
+        "price": 4000.0,
+        "status": 1,
+        "featured": false,
+        "slug": "como-crear-e-iniciar-un-programa-de-gobierno-de-da"
+    }
+},
+{
+    "model": "landing.course",
+    "pk": 2,
+    "fields": {
+        "title": "PYTHON CRASH COURSE",
+        "advertising_phrase": "En solo 8 s\u00e1bados aprender\u00e1s a programar en el lenguaje mas popular del momento. \u00a1Python!",
+        "description": "\u00a1Hola! te damos la bienvenida a nuestro \"Python Crash Course\" donde a lo largo de 8 s\u00e1bados aprender\u00e1s a programar en el lenguaje mas popular del momento, Python; ademas, al mejor costo, \u00fanete a nosotros en esta gran aventura. En este curso aprender\u00e1s a utilizar los conocimientos y herramientas proporcionadas por el instructor para aprender a desarrollar en Python de la manera mas eficiente a trav\u00e9s de desafiantes proyectos.",
+        "summary": "En este curso aprender\u00e1s a utilizar los conocimientos y herramientas proporcionadas por el instructor para aprender a desarrollar en Python de la manera mas eficiente a trav\u00e9s de desafiantes proyectos",
+        "duration_in_weeks": 8,
+        "location": "WeWork L\u00e1zaro Cardenas",
+        "start_date": null,
+        "start_hour": "2019-10-01T09:00:00Z",
+        "finish_hour": "2019-10-01T12:00:00Z",
+        "instructor": 2,
+        "price": 4000.0,
+        "status": 1,
+        "featured": true,
+        "slug": "python-crash-course"
+    }
+},
+{
+    "model": "landing.course",
+    "pk": 3,
+    "fields": {
+        "title": "INTRODUCCI\u00d3N A CIENCIA DE DATOS",
+        "advertising_phrase": "\u00a1En solo 4 s\u00e1bados aprender\u00e1s las bases para convertirte en Cient\u00edfico de Datos!",
+        "description": "Aprende a generar predicciones utilizando Python y algoritmos de machine learning. En este curso aplicar\u00e1s t\u00e9cnicas para tratar, limpiar y analizar la informaci\u00f3n; todo lo necesario para convertirte en Cient\u00edfico de Datos.",
+        "summary": "Aprende a generar predicciones utilizando Python y algoritmos de machine learning. En este curso aplicar\u00e1s t\u00e9cnicas para tratar, limpiar y analizar la informaci\u00f3n; todo lo necesario para convertirte en Cient\u00edfico de Datos.",
+        "duration_in_weeks": 4,
+        "location": "WeWork L\u00e1zaro Cardenas",
+        "start_date": null,
+        "start_hour": "2019-10-01T09:00:00Z",
+        "finish_hour": "2019-10-01T13:00:00Z",
+        "instructor": 3,
+        "price": 4000.0,
+        "status": 1,
+        "featured": false,
+        "slug": "introduccion-a-ciencia-de-datos"
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 1,
+    "fields": {
+        "name": "Semana 1: Introducci\u00f3n",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 2,
+    "fields": {
+        "name": "Semana 2: Condiciones y ciclos",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 3,
+    "fields": {
+        "name": "Semana 3: Strings, Listas y Diccionarios",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 4,
+    "fields": {
+        "name": "Semana 4: Paquetes y Ambiente Virtual",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 5,
+    "fields": {
+        "name": "Semana 5: Funciones",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 6,
+    "fields": {
+        "name": "Semana 6: Importes y Tuplas",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 7,
+    "fields": {
+        "name": "Semana 7: Programaci\u00f3n Orientada a Objetos",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 8,
+    "fields": {
+        "name": "Semana 8: Decoradores y Excepciones",
+        "description": "",
+        "course": 2,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 9,
+    "fields": {
+        "name": "Semana 1",
+        "description": "",
+        "course": 3,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 10,
+    "fields": {
+        "name": "Semana 2",
+        "description": "",
+        "course": 3,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 11,
+    "fields": {
+        "name": "Semana 3",
+        "description": "",
+        "course": 3,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 12,
+    "fields": {
+        "name": "Semana 4",
+        "description": "",
+        "course": 3,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 13,
+    "fields": {
+        "name": "Semana 1: Fundamentos de Gobierno de Datos (m\u00f3dulo te\u00f3rico)",
+        "description": "",
+        "course": 1,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 14,
+    "fields": {
+        "name": "Semana 2: \u00c9tica en el manejo de los datos (m\u00f3dulo te\u00f3rico - pr\u00e1ctico))",
+        "description": "",
+        "course": 1,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 15,
+    "fields": {
+        "name": "Semana 3: Bases para la Creaci\u00f3n de un Programa de Datos (m\u00f3dulo te\u00f3rico pr\u00e1ctico)",
+        "description": "",
+        "course": 1,
+        "status": 1
+    }
+},
+{
+    "model": "landing.phase",
+    "pk": 16,
+    "fields": {
+        "name": "Semana 4: Casos Pr\u00e1cticos (m\u00f3dulo pr\u00e1ctico)",
+        "description": "",
+        "course": 1,
+        "status": 1
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 1,
+    "fields": {
+        "name": "Descargando el curso",
+        "description": "",
+        "phase": 1
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 2,
+    "fields": {
+        "name": "Iniciando con la terminal",
+        "description": "",
+        "phase": 1
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 3,
+    "fields": {
+        "name": "Instalando Anaconda",
+        "description": "",
+        "phase": 1
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 4,
+    "fields": {
+        "name": "Utilizando Jupyter",
+        "description": "",
+        "phase": 1
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 5,
+    "fields": {
+        "name": "Condicionales",
+        "description": "",
+        "phase": 2
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 6,
+    "fields": {
+        "name": "Declaraciones",
+        "description": "",
+        "phase": 2
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 7,
+    "fields": {
+        "name": "break, continue & pass",
+        "description": "",
+        "phase": 2
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 8,
+    "fields": {
+        "name": "del",
+        "description": "",
+        "phase": 2
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 9,
+    "fields": {
+        "name": "Manipulaci\u00f3n de Strings",
+        "description": "",
+        "phase": 3
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 10,
+    "fields": {
+        "name": "Manipulaci\u00f3n de Listas",
+        "description": "",
+        "phase": 3
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 11,
+    "fields": {
+        "name": "Manipulaci\u00f3n de Diccionarios",
+        "description": "",
+        "phase": 3
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 12,
+    "fields": {
+        "name": "List Comprehension",
+        "description": "",
+        "phase": 3
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 13,
+    "fields": {
+        "name": "Administradores de paquetes: easy_install & Pip",
+        "description": "",
+        "phase": 4
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 14,
+    "fields": {
+        "name": "C\u00f3mo usar virtualenv",
+        "description": "",
+        "phase": 4
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 15,
+    "fields": {
+        "name": "*args & **kwargs",
+        "description": "",
+        "phase": 4
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 16,
+    "fields": {
+        "name": "__str__ & __rep__",
+        "description": "",
+        "phase": 4
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 17,
+    "fields": {
+        "name": "Manipulaci\u00f3n de D\u00edas y Fechas en Python",
+        "description": "",
+        "phase": 5
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 18,
+    "fields": {
+        "name": "Funciones",
+        "description": "",
+        "phase": 5
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 19,
+    "fields": {
+        "name": "Variables",
+        "description": "",
+        "phase": 5
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 20,
+    "fields": {
+        "name": "Proyecto",
+        "description": "",
+        "phase": 5
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 21,
+    "fields": {
+        "name": "Tuplas",
+        "description": "",
+        "phase": 6
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 22,
+    "fields": {
+        "name": "Booleanos",
+        "description": "",
+        "phase": 6
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 23,
+    "fields": {
+        "name": "Importando M\u00f3dulos",
+        "description": "",
+        "phase": 6
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 24,
+    "fields": {
+        "name": "Proyecto II",
+        "description": "",
+        "phase": 6
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 25,
+    "fields": {
+        "name": "Programaci\u00f3n Orientada a Objetos",
+        "description": "",
+        "phase": 7
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 26,
+    "fields": {
+        "name": "Reto POO",
+        "description": "",
+        "phase": 7
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 27,
+    "fields": {
+        "name": "Proyecto III",
+        "description": "",
+        "phase": 8
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 28,
+    "fields": {
+        "name": "Generadores",
+        "description": "",
+        "phase": 8
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 29,
+    "fields": {
+        "name": "Decoradores",
+        "description": "",
+        "phase": 8
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 30,
+    "fields": {
+        "name": "Manejo de Excepciones",
+        "description": "",
+        "phase": 8
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 31,
+    "fields": {
+        "name": "Anaconda",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 32,
+    "fields": {
+        "name": "Jupyter",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 33,
+    "fields": {
+        "name": "Operaciones con n\u00fameros",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 34,
+    "fields": {
+        "name": "Operaciones con cadenas",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 35,
+    "fields": {
+        "name": "Listas",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 36,
+    "fields": {
+        "name": "\u00cdndices y cortes",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 37,
+    "fields": {
+        "name": "Diccionarios",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 38,
+    "fields": {
+        "name": "Listas por comprensi\u00f3n",
+        "description": "",
+        "phase": 9
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 39,
+    "fields": {
+        "name": "Introducci\u00f3n Numpy",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 40,
+    "fields": {
+        "name": "Creaci\u00f3n de arreglos",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 41,
+    "fields": {
+        "name": "\u00cdndices y cortes con arreglos",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 42,
+    "fields": {
+        "name": "Arreglos vs matrices",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 43,
+    "fields": {
+        "name": "Broadcasting",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 44,
+    "fields": {
+        "name": "Reducciones",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 45,
+    "fields": {
+        "name": "Introducci\u00f3n Matplotlib",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 46,
+    "fields": {
+        "name": ">Histogramas, gr\u00e1ficos de barras, dispersi\u00f3n y pastel",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 47,
+    "fields": {
+        "name": "Figuras y ejes",
+        "description": "",
+        "phase": 10
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 48,
+    "fields": {
+        "name": "Introducci\u00f3n a Pandas",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 49,
+    "fields": {
+        "name": "Series y DataFrames",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 50,
+    "fields": {
+        "name": "Operaciones con series",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 51,
+    "fields": {
+        "name": "M\u00e1scaras (filtros)",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 52,
+    "fields": {
+        "name": "\u00cdndices y columnas de un Dataframe",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 53,
+    "fields": {
+        "name": "Agrupaciones",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 54,
+    "fields": {
+        "name": "Ejercicio pr\u00e1ctico con Pandas",
+        "description": "",
+        "phase": 11
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 55,
+    "fields": {
+        "name": "Sesi\u00f3n pr\u00e1ctica con Pandas",
+        "description": "",
+        "phase": 12
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 56,
+    "fields": {
+        "name": "Beneficios de crear un programa de Gobierno de Datos",
+        "description": "",
+        "phase": 13
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 57,
+    "fields": {
+        "name": "Conceptos b\u00e1sicos",
+        "description": "",
+        "phase": 13
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 58,
+    "fields": {
+        "name": "Gesti\u00f3n de datos",
+        "description": "",
+        "phase": 13
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 59,
+    "fields": {
+        "name": "Principales metodolog\u00edas (DAMA, DGI y Non Invasive Data Governance) y su  aportaci\u00f3n en la creaci\u00f3n",
+        "description": "",
+        "phase": 13
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 60,
+    "fields": {
+        "name": "Principios \u00e9ticos de datos",
+        "description": "",
+        "phase": 14
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 61,
+    "fields": {
+        "name": "Principios detr\u00e1s de la protecci\u00f3n de datos personales",
+        "description": "",
+        "phase": 14
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 62,
+    "fields": {
+        "name": "Riesgos debido al manejo no \u00e9tico de los datos",
+        "description": "",
+        "phase": 14
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 63,
+    "fields": {
+        "name": "Bases para crear una cultura del manejo \u00e9tico de los datos",
+        "description": "",
+        "phase": 14
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 64,
+    "fields": {
+        "name": "C\u00f3mo definir qu\u00e9 es el Gobierno de Datos para la empresa",
+        "description": "",
+        "phase": 15
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 65,
+    "fields": {
+        "name": "C\u00f3mo crear el Marco de Referencia (framework)",
+        "description": "",
+        "phase": 15
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 66,
+    "fields": {
+        "name": "C\u00f3mo crear la Pol\u00edtica de GD",
+        "description": "",
+        "phase": 15
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 67,
+    "fields": {
+        "name": "C\u00f3mo crear le estructura organizacional para el GD",
+        "description": "",
+        "phase": 15
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 68,
+    "fields": {
+        "name": "Procesos b\u00e1sicos operativos de un GD",
+        "description": "",
+        "phase": 15
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 69,
+    "fields": {
+        "name": "Revisi\u00f3n de los diferentes Programas de GD generados",
+        "description": "",
+        "phase": 16
+    }
+},
+{
+    "model": "landing.topic",
+    "pk": 70,
+    "fields": {
+        "name": "Exposici\u00f3n de los Programas de GD ante el grupo",
+        "description": "",
+        "phase": 16
+    }
+}
+]
